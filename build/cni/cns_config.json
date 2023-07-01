@@ -1,0 +1,34 @@
+{
+    "TelemetrySettings": {
+        "DebugMode": false,
+        "DisableAll": false,
+        "HeartBeatIntervalInMins": 30,
+        "RefreshIntervalInSecs": 15,
+        "SnapshotIntervalInMins": 60,
+        "TelemetryBatchIntervalInSecs": 15,
+        "TelemetryBatchSizeBytes": 16384
+    },
+    "ManagedSettings": {
+        "InfrastructureNetworkID": "",
+        "NodeID": "",
+        "NodeSyncIntervalInSeconds": 30,
+        "PrivateEndpoint": ""
+    },
+    "ChannelMode": "Direct",
+    "InitializeFromCNI": false,
+    "TLSCertificatePath": "",
+    "TLSPort": "10091",
+    "TLSSubjectName": "",
+    "UseHTTPS": false,
+    "WireserverIP": "168.63.129.16",
+    "KeyVaultSettings": {
+        "URL": "",
+        "CertificateName": "",
+        "RefreshIntervalInHrs": 12
+    },
+    "MSISettings": {
+        "ResourceID": ""
+    },
+    "PopulateHomeAzCacheRetryIntervalSecs": 15,
+    "MellanoxMonitorIntervalSecs": 30
+}
