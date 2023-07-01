@@ -4,11 +4,19 @@
    "plugins":[
       {
          "type":"azure-vnet",
-         "mode":"transparent",
-         "ipsToRouteViaHost":["169.254.20.10"],
+         "mode":"bridge",
+         "bridge":"azure0",
+         "multiTenancy":true,
+         "infraVnetAddressSpace":"",
+         "podNamespaceForDualNetwork":[],
+         "enableExactMatchForPodName": false,
+         "enableSnatOnHost":true,
          "ipam":{
-            "type":"azure-vnet-ipam"
-         }
+            "type":"azure-cns"
+         },
+         "dns":{
+            "nameservers":[]
+        }
       },
       {
          "type":"portmap",
